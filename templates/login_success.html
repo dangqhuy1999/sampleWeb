@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Success</title>
+    <script>
+        window.onload = function() {
+            if (confirm("Đăng nhập thành công! Bạn muốn chuyển sang trang chủ?")) {
+                window.location.href = "{{ url_for('home') }}";
+            } else {
+                window.location.href = "{{ url_for('login') }}";
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
